@@ -13,13 +13,21 @@
   left: 50%;
   width: 528px;
   height: 581px;
+  padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms linear;
-  padding: 40px;
+  @media screen and(min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -67,8 +75,14 @@
 }
 
 .form {
-  width: 448px;
+  width: 212px;
   margin: 0 auto;
+  @media screen and(min-width:480px) {
+    width: 370px;
+  }
+  @include desktop {
+    width: 448px;
+  }
 }
 
 .form-field {
@@ -161,11 +175,18 @@ textarea {
 .checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 2.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
+  @media screen and(min-width: 480px) {
+    font-size: 12px;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-icon {
   display: inline-block;

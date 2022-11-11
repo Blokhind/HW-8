@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Шапка сайту -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo navigation__logo" href="/"
@@ -62,7 +62,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- Герой -->
       <section class="hero">
@@ -152,13 +152,36 @@
         <div class="container team__container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-            <li>
+            <li class="team__item">
               <div class="team__img">
-                <img
+                <picture>
+                  <source
+                  srcset="
+                  ./images/imgigor.jpg    1x,
+                  ./images/imgigor2x.jpg 2x
+                "
+                    media="(min-width: 1200px)">
+                 
+                    <source
+                    srcset="
+                    ./images/imgigor-tab1x.jpg     1x,
+                    ./images/imgigor-tab2x.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/imgigor-mob1x.jpg    1x,
+                    ./images/imgigor-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   src="./images/imgigor.jpg"
                   alt="Працівник компанії"
-                  width="270"
                 />
+                </picture>
+                
                 <div class="team__text">
                   <p class="team__top-text">Ігор Дем'яненко</p>
                   <p class="team__bottom-text">Product Designer</p>
@@ -203,13 +226,36 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="team__img">
-                <img
+                <picture>
+                  <source
+                  srcset="
+                  ./images/imgolga.jpg    1x,
+                  ./images/imgolga2x.jpg 2x
+                "
+                    media="(min-width: 1200px)">
+                 
+                    <source
+                    srcset="
+                    ./images/imgolga-tab1x.jpg     1x,
+                    ./images/imgolga-tab2x.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/imgolga-mob1x.jpg    1x,
+                    ./images/imgolga-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   src="./images/imgolga.jpg"
                   alt="Працівник компанії"
-                  width="270"
                 />
+                </picture>
+                
                 <div class="team__text">
                   <p class="team__top-text">Ольга Рєпіна</p>
                   <p class="team__bottom-text">Frontend Developer</p>
@@ -254,13 +300,36 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="team__img">
-                <img
+                <picture>
+                  <source
+                  srcset="
+                  ./images/imgmykola.jpg    1x,
+                  ./images/imgmykola2x.jpg 2x
+                "
+                    media="(min-width: 1200px)">
+                 
+                    <source
+                    srcset="
+                    ./images/imgmykola-tab1x.jpg     1x,
+                    ./images/imgmykola-tab2x.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/imgmykola-mob1x.jpg    1x,
+                    ./images/imgmykola-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   src="./images/imgmykola.jpg"
                   alt="Працівник компанії"
-                  width="270"
                 />
+                </picture>
+                
                 <div class="team__text">
                   <p class="team__top-text">Микола Тарасов</p>
                   <p class="team__bottom-text">Marketing</p>
@@ -305,13 +374,36 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="team__img">
-                <img
+                <picture>
+                  <source
+                  srcset="
+                  ./images/imgmyhailo.jpg    1x,
+                  ./images/imgmyhailo2x.jpg 2x
+                "
+                    media="(min-width: 1200px)">
+                 
+                    <source
+                    srcset="
+                    ./images/imgmyhailo-tab1x.jpg     1x,
+                    ./images/imgmyhailo-tab2x.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/imgmyhailo-mob1x.jpg    1x,
+                    ./images/imgmyhailo-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   src="./images/imgmyhailo.jpg"
                   alt="Працівник компанії"
-                  width="270"
                 />
+                </picture>
+                
                 <div class="team__text">
                   <p class="team__top-text">Михайло Єрмаков</p>
                   <p class="team__bottom-text">UI Designer</p>

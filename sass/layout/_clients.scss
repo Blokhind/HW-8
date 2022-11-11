@@ -1,27 +1,41 @@
 .clients-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .buyer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .buyer__item {
-  flex-basis: calc((100% - 5 * 30px) / 6);
+  flex-basis: calc((100% - 5 * 30px) / 2);
+ 
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 5 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+  }
+  
 }
 
 .buyer__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -33,6 +47,12 @@
   &:focus {
     color: #2196f3;
     border-color: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
