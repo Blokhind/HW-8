@@ -700,7 +700,7 @@ textarea::placeholder {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(../images/bg-hero-mob2x.jpg);
+    background-image: var(--bg-gradient), url(../images/img-bg-hero-mobile2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -710,7 +710,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(../images/bg-hero-tab2x.jpg);
+    background-image: var(--bg-gradient), url(../images/bg-hero-tab2xa.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -721,7 +721,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(../images/bg-hero2x.jpg);
+    background-image: var(--bg-gradient), url(../images/img-bg-hero2x.jpg);
   }
 }
 

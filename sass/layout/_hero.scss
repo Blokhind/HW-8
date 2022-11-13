@@ -13,19 +13,19 @@
     padding-bottom: 200px;
   }
   @include retina {
-    background-image: var(--bg-gradient), url(../images/bg-hero-mob2x.jpg);
+    background-image: var(--bg-gradient), url(../images/img-bg-hero-mobile2x.jpg);
   }
   @include tablet {
     background-image: var(--bg-gradient), url(../images/bg-hero-tab1x.jpg);
     @include retina {
-      background-image: var(--bg-gradient), url(../images/bg-hero-tab2x.jpg);
+      background-image: var(--bg-gradient), url(../images/bg-hero-tab2xa.jpg);
     }
   }
   @include desktop {
     max-width: 1600px;
     background-image: var(--bg-gradient), url(../images/img-bg-hero.jpg);
     @include retina {
-      background-image: var(--bg-gradient), url(../images/bg-hero2x.jpg);
+      background-image: var(--bg-gradient), url(../images/img-bg-hero2x.jpg);
     }
   }
 }
