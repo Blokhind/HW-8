@@ -62,6 +62,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 button {
@@ -506,7 +507,7 @@ textarea::placeholder {
 .address__mail,
 .address__tel {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -518,6 +519,12 @@ textarea::placeholder {
 .address__tel:focus {
   color: #2196f3;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .address__mail,
+.address__tel {
+    font-size: 14px;
+  }
 }
 
 .menu-open-btn {
@@ -768,6 +775,13 @@ textarea::placeholder {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .benefits__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .features {
   list-style: none;
   display: flex;
@@ -828,6 +842,16 @@ textarea::placeholder {
   text-transform: uppercase;
   color: var(--second-color);
 }
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__title {
+    text-align: left;
+  }
+}
 
 .features__text {
   text-align: left;
@@ -850,6 +874,11 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .about__container {
+    padding-bottom: 94px;
+  }
 }
 
 .about__title {
@@ -890,6 +919,12 @@ textarea::placeholder {
 
 .team {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__container {
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -982,6 +1017,12 @@ textarea::placeholder {
 
 .socials__icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__container {
+    padding-bottom: 94px;
+  }
 }
 
 .clients-title {
@@ -1305,9 +1346,25 @@ textarea::placeholder {
 
 .menu--top-list {
   display: flex;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   gap: 8px;
-  list-style: none;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .menu--top-list {
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu--top-list {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 8px;
+    list-style: none;
+  }
 }
 
 .menu-item-btn {
@@ -1332,16 +1389,41 @@ textarea::placeholder {
 }
 
 .menu {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.menu-under-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  gap: 30px;
-  list-style: none;
+@media screen and (min-width: 768px) {
+  .menu-under-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-under-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-under-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+.menu-under-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .cards {
@@ -1387,6 +1469,11 @@ textarea::placeholder {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-title {
+    font-size: 16px;
+  }
 }
 
 .menu-text {

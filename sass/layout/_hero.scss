@@ -63,17 +63,17 @@
   border-radius: 4px;
   border: none;
   @media screen and (min-width: 1200px) {
-    padding: 10px 32px 10px 32px;;
+    padding: 10px 32px 10px 32px;
   }
 }
 
-.benefits {
-  // padding-top: 94px;
-  // padding-bottom: 0;
-}
 .benefits__container {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 .features {
   list-style: none;
   display: flex;
@@ -123,6 +123,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-color);
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 .features__text {
   text-align: left;
