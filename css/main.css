@@ -687,6 +687,7 @@ textarea::placeholder {
   background-image: var(--bg-gradient), url(../images/bg-hero-mob1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   width: 100%;
   margin: 0 auto;
   padding-top: 118px;
