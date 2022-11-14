@@ -25,13 +25,17 @@
     }
   }
   .menu-under-item {
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-basis: calc((100% - 30px) / 2);
     }
   }
+  
   .menu-under-item:not(:last-child) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 30px;
   }
+  }
+
   .cards {
     padding: 20px 24px 20px 24px;
     border: 1px solid #eeeeee;

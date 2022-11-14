@@ -860,6 +860,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .about {
     display: flex;
+    padding-top: 0;
   }
 }
 
@@ -1398,8 +1399,10 @@ textarea::placeholder {
   }
 }
 
-.menu-under-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-under-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .cards {
